@@ -1,0 +1,62 @@
+
+html 
+{
+  /** background-color:red; **/             /**cor de fundo desativada **/  
+
+  /**background-size:contain; **/ /**  a imagem é redimensionada para encaixar no espaço disponível. **/
+  /** background-size:auto; **/  /** a imagem é redimensionada para ser exibida na área disponível, mesmo que ela fique distorcida; **/
+  background-size:cover;  
+  background-image: url("fundo1.jpg");
+
+}
+
+
+/** corpo da página **/
+body {
+   
+   color:red;
+  
+}
+
+/** menu de navegação geral **/
+nav 
+{
+position: absolute;
+right: 0;
+}
+
+
+nav li{
+    display:inline;
+    padding: 20px;
+ 
+
+}
+
+nav a {
+    color: #faf5f5;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+
+
+    div.body-content{
+        /** Essa margem vai evitar que o conteudo fique por baixo do rodapé **/
+        margin-bottom: 50px;
+      }
+      
+      footer.fixar-rodape{
+        border-top: 1px solid #333;
+        bottom: 0;
+        left: 0;
+        height: 50px; /** Deve ter o mesmo tamanho do div.body-content **/
+        position: fixed;
+        width: 100%;
+
+        background-color: #333;
+        color: #fff;
+        padding: 1px;
+        text-align: center;
+      }
